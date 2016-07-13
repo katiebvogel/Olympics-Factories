@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="olympicPicker">
+  <head>
+    <meta charset="utf-8">
+    <title>Olympian Picker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="vendor/angular.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    <header id="header">
+      <img id="gif1" src="http://media0.giphy.com/media/mPIA4KZVXv0ty/giphy.gif"></img>
+      <img id="gif2" src="http://media1.giphy.com/media/YfMHLC2s6okBq/giphy.gif"></img>
+      <img id="gif3" src="https://media4.giphy.com/media/mrOSI7f6QGjKw/giphy.gif"></img>
+      <img id="gif4" src="http://media4.giphy.com/media/ULSkhG8VfnUt2/giphy.gif"></img>
+    </header>
+
+    <button ng-click="genRanOlympians()">Generate</button>
+
+    <table>
+      <tr>
+        <td>BADmintonner</td>
+        <td>{{badmintonner}}</td>
+      </tr>
+      <tr>
+        <td>Women's Gymnast</td>
+        <td>{{gymnast}}</td>
+      </tr>
+      <tr>
+        <td>Table Tenniser</td>
+        <td>{{tableTennisian}}</td>
+      </tr>
+      <tr>
+        <td>Tae Kwon Doer</td>
+        <td>{{taeKwonDoer}}</td>
+      </tr>
+      <tr>
+        <td>Synchronized Swimmer</td>
+        <td>{{syncSwimmer}}</td>
+      </tr>
+    </table>
+
+    <div id="starDiv"><img id="stars" src="bluestars.gif"></img></div>
+
+
+  </body>
+</html>
