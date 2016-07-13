@@ -19,6 +19,10 @@ h1 {
   padding-top: 80px;
 }
 
+a button {
+  float: left;
+}
+
 button {
   display: block;
   margin: auto;
