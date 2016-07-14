@@ -5,15 +5,15 @@ angular.module('olympicPicker', ['ngRoute']);
   $routeProvider
     .when('/badminton', {
       templateUrl: 'views/badminton.html',
-      controller: 'BadController'
+      controller: 'BadmintonController'
     })
     .when('/womensgymnastics', {
       templateUrl: 'views/womgym.html',
-      controller: 'GymController'
+      controller: 'GymnasticsController'
     })
     .when('/tabletennis', {
       templateUrl: 'views/tabten.html',
-      controller: 'TabTenController'
+      controller: 'TableTennisController'
     })
     .when('/taekwondo', {
       templateUrl: 'views/taekwondo.html',
@@ -25,7 +25,7 @@ angular.module('olympicPicker', ['ngRoute']);
     });
 
     $locationProvider.html5Mode(true);
-})
+});
 
 
 
@@ -62,4 +62,4 @@ angular.module('olympicPicker').controller('SyncSwimController', function($scope
   .then(function(response){
   $scope.syncSwimmer = response.data.Name + ' from ' + response.data.Origin;
   });
-});
+});*/
