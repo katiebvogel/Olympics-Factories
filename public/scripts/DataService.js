@@ -51,7 +51,7 @@ angular.module('olympicPicker').factory('DataService', function($http){
   }
 
   function callSync(){
-    $http.get('/olympics/syncswim').then(handleSuccessSync, handleFailure);
+    $http.get('/olympics/syncswimming').then(handleSuccessSync, handleFailure);
   }
 
 callBad();
